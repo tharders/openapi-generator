@@ -4685,7 +4685,7 @@ public class DefaultCodegen implements CodegenConfig {
                     //TODO fix collectformat for form parameters
                     //collectionFormat = getCollectionFormat(s);
                     // default to csv:
-                    codegenParameter.collectionFormat = StringUtils.isEmpty(collectionFormat) ? "csv" : collectionFormat;
+                    codegenParameter.collectionFormat = null; //StringUtils.isEmpty(collectionFormat) ? "csv" : collectionFormat;
 
                     // set nullable
                     setParameterNullable(codegenParameter, codegenProperty);
